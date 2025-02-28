@@ -21,7 +21,7 @@ public class Main {
             int task = in.nextInt();
             switch (task) {
                 case 1: {
-                    out.println("Задание 1.1: Класс Коробка для хранения обекта любого типа.");
+                    out.println("Задание 1.1: Класс Коробка для хранения объекта любого типа.");
                     Box<Integer> b1 = new Box<>(3);
                     out.println("Создана коробка целочисленного типа со значением 3.");
                     methodOfBox( b1 );
@@ -107,7 +107,7 @@ public class Main {
                             v -> new HashMap<>(),
                             (map, word) -> map.computeIfAbsent(word.length(), k -> new ArrayList<>()).add(word)
                     );
-                    System.out.println("Список 2: " + List2 + " , Результат (Разделение по длинне строки): " + groupedByLength);
+                    System.out.println("Список 2: " + List2 + " , Результат (Разделение по длине строки): " + groupedByLength);
 
                     Set<String> uniqueWords = collect(
                             List3,
